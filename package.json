@@ -1,6 +1,8 @@
 {
-  "name": "AI Project Landing Page",
-  "version": "0.1.0",
+  "name": "nova-builder",
+  "version": "1.0.0",
+  "description": "NovaBuilder – An AI-powered landing page builder with drag-and-drop layout and modern fullstack integration.",
+  "author": "Anushka Ramrakhya",
   "private": true,
   "scripts": {
     "dev": "next dev",
