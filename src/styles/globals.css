@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Gradient: Dark clay to soft rust */
+    --gradient: linear-gradient(to top left, #8a4e36, #3d2c29);
+
+    --background: 24 10% 10%;
+    --foreground: 24 20% 90%;
+
+    --muted: 24 10% 20%;
+    --muted-foreground: 24 10% 60%;
+
+    --popover: 24 8% 14%;
+    --popover-foreground: 24 20% 90%;
+
+    --card: 24 8% 14%;
+    --card-foreground: 24 20% 90%;
+
+    --border: 24 10% 30%;
+    --input: 24 10% 30%;
+
+    --primary: 15 55% 50%;
+    --primary-foreground: 24 20% 95%;
+
+    --secondary: 24 10% 20%;
+    --secondary-foreground: 24 20% 90%;
+
+    --accent: 15 40% 70%;
+    --accent-foreground: 24 10% 10%;
+
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 24 20% 90%;
+
+    --ring: 15 55% 50%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 24 10% 10%;
+    --foreground: 24 20% 90%;
+
+    --primary: 15 55% 60%;
+    --primary-foreground: 24 20% 95%;
+
+    --card: 24 8% 14%;
+    --card-foreground: 24 20% 90%;
+
+    --popover: 24 8% 14%;
+    --popover-foreground: 24 20% 90%;
+
+    --secondary: 24 10% 20%;
+    --secondary-foreground: 24 20% 90%;
+
+    --muted: 24 10% 20%;
+    --muted-foreground: 24 20% 60%;
+
+    --accent: 15 40% 70%;
+    --accent-foreground: 24 10% 10%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 24 20% 90%;
+
+    --border: 24 10% 30%;
+    --input: 24 10% 30%;
+    --ring: 15 55% 60%;
+
+    --radius: 0.5rem;
+  }
+}
+
+::selection {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: hsl(var(--background));
+  border-radius: 8px;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--primary));
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(var(--background));
+}
+
+.dotPattern {
+  background-image: radial-gradient(rgb(56, 47, 43) 1px, transparent 1px);
+  background-size: 25px 25px;
+}
+
+.use-automation-zoom-in {
+  animation: automation-zoom-in 0.5s;
+}
+
+.card-mask {
+  background: radial-gradient(ellipse at center, rgba(138, 78, 54, 0.15), transparent);
+}
+
+.gradient {
+  background: linear-gradient(135deg, #8a4e36, #3d2c29);
+}
+
+.lamp {
+  opacity: 1;
+  transform: translateY(-200px) rotate(180deg) scale(2) translateZ(0px);
+}
+
+@keyframes automation-zoom-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
